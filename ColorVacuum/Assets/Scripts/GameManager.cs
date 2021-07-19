@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         if (playerState == PlayerState.Prepare)
         {
             StartScreen.SetActive(true);
-            diamondText.text = "" + (currentLevelDiamondCount + diamondCount) ;
+//            diamondText.text = "" + (currentLevelDiamondCount + diamondCount) ;
 
         }
 
