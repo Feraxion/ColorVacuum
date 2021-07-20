@@ -59,15 +59,19 @@ public class PlayerMovement : MonoBehaviour
         
             if (isTouching)
             {
-                touchPosX += Input.GetAxis("Mouse X") * controlSpeed * Time.fixedDeltaTime;
+                touchPosX = Input.GetAxis("Mouse X") * controlSpeed * Time.fixedDeltaTime;
                 
                 //Debug.Log(Input.GetAxis("Mouse X"));
                // rotateObj = Quaternion.Euler(0,Input.GetAxis("Mouse X")* 100 ,0);
                 //rotateObj.y = Mathf.Clamp(rotateObj.y,-30,30);
                 //gameObject.transform.rotation = rotateObj;
             }
+            else
+            {
+                touchPosX = 0;
+            }
 
-            transform.position = new Vector3(touchPosX, transform.position.y, transform.position.z);
+            transform.position += new Vector3(touchPosX, 0, 0);
         }
         
     }

@@ -55,12 +55,26 @@ public class Player : MonoBehaviour
             {
                 for (int d = 0; d < width; d++)
                 {
+                    if ( i ==  j&& merdiven)
+                    {
+                        //Merdiven bloklari gelicek
+                        GameObject shaper = Instantiate(cube, startPos.transform.position, Quaternion.Euler(45,0,0));
+                        shaper.transform.DOMove(new Vector3(0 + (d * 0.6f), -0.85f + (i * 0.6f), 43.42f + (j * 0.6f)), 1);
+                        shaper.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f),1);
+                        yield return new WaitForSeconds(0.03f);
+                        shaper.GetComponent<BoxCollider>().enabled = true;
+                        
+                    }
+                    else
+                    {
+                        GameObject shaper = Instantiate(cube, startPos.transform.position, Quaternion.identity);
+                        shaper.transform.DOMove(new Vector3(0 + (d * 0.6f), -0.85f + (i * 0.6f), 43.42f + (j * 0.6f)), 1);
+                        shaper.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f),1);
+                        yield return new WaitForSeconds(0.03f);
+                        shaper.GetComponent<BoxCollider>().enabled = true;
+                    }
                     
-                    GameObject shaper = Instantiate(cube, startPos.transform.position, Quaternion.identity);
-                    shaper.transform.DOMove(new Vector3(0 + (d * 0.6f), -0.85f + (i * 0.6f), 43.42f + (j * 0.6f)), 1);
-                    shaper.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f),1);
-                    yield return new WaitForSeconds(0.03f);
-                    shaper.GetComponent<BoxCollider>().enabled = true;
+                    
 
                     
                 }
