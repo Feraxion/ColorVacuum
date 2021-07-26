@@ -8,6 +8,7 @@ public class CollectibleCube : MonoBehaviour
 {
     public bool isMove;
     public Transform targetPos;
+    private bool isOnce;
     
     // Start is called before the first frame update
     void Start()
@@ -23,16 +24,17 @@ public class CollectibleCube : MonoBehaviour
         {
             gameObject.transform.DOMove(targetPos.position, 1);
             gameObject.transform.DOScale(Vector3.zero, 1.5f);
-            gameObject.transform.DORotate(new Vector3(350,360,306),1);
+            //gameObject.transform.DORotate(new Vector3(350,360,306),1);
 
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("GoToVacuum"))
+        if (other.gameObject.CompareTag("GoToVacuum") && !isOnce)
         {
             isMove = true;
+            isOnce = true;
         }
 
         if (other.gameObject.CompareTag("Vacuum"))
