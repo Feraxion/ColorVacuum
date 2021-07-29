@@ -68,8 +68,8 @@ public class Player : MonoBehaviour
                     else
                     {
                         GameObject shaper = Instantiate(cube, startPos.transform.position, Quaternion.identity);
-                        shaper.transform.DOMove(new Vector3(0 + (d * 0.5f), -0.75f + (i * 0.6f), 43.42f + (j * 0.6f)), 1);
-                        shaper.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f),1);
+                        shaper.transform.DOMove(new Vector3(0 + (d * 0.5f), -0.85f + (i * 0.5f), 43.42f + (j * 0.6f)), 1);
+                        shaper.transform.DOScale(new Vector3(0.6f, 0.55f, 0.6f),1);
                         yield return new WaitForSeconds(0.03f);
                         shaper.GetComponent<BoxCollider>().enabled = true;
                     }
