@@ -9,15 +9,5 @@ public class FormShapeInfo : MonoBehaviour
     public bool merdiven;
 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

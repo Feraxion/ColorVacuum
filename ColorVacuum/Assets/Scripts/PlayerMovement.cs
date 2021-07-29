@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -42,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
             GetInput();
 
         }
+
+       
     }
 
     private void FixedUpdate()
