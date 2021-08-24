@@ -15400,8 +15400,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3090263, y: 1e-45, z: 0, w: 0.9510535}
-  m_LocalPosition: {x: -0.20238502, y: 5.1499996, z: -49.920002}
+  m_LocalRotation: {x: 0.3090263, y: 3e-45, z: -1e-45, w: 0.9510535}
+  m_LocalPosition: {x: -0.20238502, y: 23.44, z: -49.920002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21827,8 +21827,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267944782}
-  m_LocalRotation: {x: 0.3090263, y: 1e-45, z: 0, w: 0.9510535}
-  m_LocalPosition: {x: -0.20238502, y: 5.1499996, z: -49.920002}
+  m_LocalRotation: {x: 0.3090263, y: 3e-45, z: -1e-45, w: 0.9510535}
+  m_LocalPosition: {x: -0.20238502, y: 23.44, z: -49.920002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 587112345}
@@ -38078,7 +38078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54f7151bd012cc24fb9ba076c9eac9af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.51
+      value: 17.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54f7151bd012cc24fb9ba076c9eac9af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38748,6 +38748,7 @@ GameObject:
   - component: {fileID: 5007876974534010828}
   - component: {fileID: 4840852033567151654}
   - component: {fileID: 2640245568633475889}
+  - component: {fileID: 926725943122436192}
   m_Layer: 0
   m_Name: Yer
   m_TagString: Untagged
@@ -38755,6 +38756,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &926725943122436192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926725943122436191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999994, z: 0.045929804}
+  m_Center: {x: 0, y: 0.009999995, z: 0.022964898}
 --- !u!4 &963850756491976821
 Transform:
   m_ObjectHideFlags: 0
